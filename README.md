@@ -5,7 +5,7 @@ OAuth2 Authorization Server based on Spring Security OAuth2 and Couchbase
 
 This is the basic Authorization server based on Spring Security OAuth2.
 
-The main goal is to show how to implements an Authorization Server with a Couchbase Server token service provider.
+The main goal is to show you how to implement an Authorization Server with a Couchbase Server token service provider.
 
 How to use it ?
 ==============================
