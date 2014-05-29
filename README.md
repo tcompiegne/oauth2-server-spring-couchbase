@@ -3,6 +3,8 @@ oauth2-server-spring-couchbase
 
 OAuth2 Authorization Server based on Spring Security OAuth2 and Couchbase
 
+![spring-oauth2-couchbase] (https://github.com/tcompiegne/oauth2-server-spring-couchbase/raw/master/site/site.PNG)
+
 This is the basic Authorization server based on Spring Security OAuth2.
 
 The main goal is to show you how to implement an Authorization Server with a Couchbase Server token service provider.
@@ -75,6 +77,27 @@ Response Body   ::
 
 =============== =================================================
 
+</pre>
+
+Retrieve your tokens :
+
+You can retrieve thanks to Couchbase web console (http://your-host:8091)
+
+![couchbase-tokens] (https://github.com/tcompiegne/oauth2-server-spring-couchbase/raw/master/site/couchbase-tokens.PNG)
+
+
+Informations
+===================================
+
+Couchbase tokens are no expiry time (they remain indefinitely inside couchbase)
+
+To set an expiry time you can declare your document like this :
+
+<pre>
+@Document(expiry = 1000) 
+public class OAuth2AccesToken {
+  ...
+}
 </pre>
 
 Community
