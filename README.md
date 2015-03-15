@@ -15,7 +15,7 @@ How to use it ?
 First of all checkout my other project to retrieve the couchbase token store :
 
 <pre>
-- git clone https://github.com/tcompiegne/couchbase-token-store-spring-oauth2.git
+- git clone https://github.com/tcompiegne/oauth2-couchbase-token-store.git
 - mvn install
 </pre>
 
